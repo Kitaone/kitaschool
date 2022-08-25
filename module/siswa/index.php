@@ -10,7 +10,7 @@ $aksi   = "module/".$_GET['module']."/action.php";
     </div>
     <div class="card-body">
       <div class="p-2">
-        <?php 
+        <?php  
         if (isset($_SESSION['flash'])): ?>
           <div class="<?php echo $_SESSION['flash']['class']; ?> mt-3 mb-3"> 
             <i class="<?php echo $_SESSION['flash']['icon'] ?>"></i> <?php echo $_SESSION['flash']['label']; ?>
