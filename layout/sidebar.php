@@ -18,24 +18,62 @@
           <p>Siswa</p>
         </a>
       </li>
+      <li class="nav-item <?php if (@$_GET['module']=='teacher'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=teacher">
+          <i class="material-icons">content_paste</i>
+          <p>Teacher</p>
+        </a>
+      </li>
+      <li class="nav-item <?php if (@$_GET['module']=='Parent'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=parent">
+          <i class="material-icons">content_paste</i>
+          <p>Parent</p>
+        </a>
+      </li>
       <li class="nav-item <?php if (@$_GET['module']=='ppdb'){echo 'active';} ?>">
         <a class="nav-link" href="?module=ppdb">
           <i class="material-icons">person</i>
           <p>PPDB</p>
         </a>
       </li>
-      <!-- <li class="nav-item <?php if (@$_GET['module']=='obat'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=obat">
-          <i class="material-icons">bubble_chart</i>
-          <p>Obat</p>
+      <li class="nav-item <?php if (@$_GET['module']=='apps'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=ppdb">
+          <i class="material-icons">person</i>
+          <p>Apps</p>
         </a>
       </li>
-      <li class="nav-item <?php if (@$_GET['module']=='dokter'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=dokter">
-          <i class="material-icons">health_and_safety</i>
-          <p>Dokter</p>
+      <li class="nav-item <?php if (@$_GET['module']=='course'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=course">
+          <i class="material-icons">bubble_chart</i>
+          <p>Course</p>
         </a>
-      </li> -->
+      </li>
+      <li class="nav-item <?php if (@$_GET['module']=='class'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=class">
+          <i class="material-icons">health_and_safety</i>
+          <p>class</p>
+        </a>
+      </li>
+
+      <li class="nav-item <?php if (@$_GET['module']=='role'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=role">
+          <i class="material-icons">health_and_safety</i>
+          <p>Role</p>
+        </a>
+      </li>
+
+      <li class="nav-item <?php if (@$_GET['module']=='payment'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=payment">
+          <i class="material-icons">health_and_safety</i>
+          <p>Payment</p>
+        </a>
+      </li>
+      <li class="nav-item <?php if (@$_GET['module']=='bk'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=bk">
+          <i class="material-icons">health_and_safety</i>
+          <p>BK</p>
+        </a>
+      </li>
     </ul>
   </div>
 </div>
