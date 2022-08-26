@@ -1,7 +1,7 @@
 <?php 
 date_default_timezone_set("Asia/Jakarta");
-$conn = new mysqli("localhost","kitq3349_main","1qAzxSw2#@!","kitq3349_kitaschool");
-// error_reporting(0);
+// $conn = new mysqli("localhost","kitq3349_main","1qAzxSw2#@!","kitq3349_kitaschool");
+error_reporting(0);
 session_start();
 function dateIndonesian($date){
 	$array_hari = array(1=>'Senin','Selasa','Rabu','Kamis','Jumat', 'Sabtu','Minggu');
