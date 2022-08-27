@@ -14,7 +14,7 @@
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='bk'){echo 'active';} ?>">
         <a class="nav-link" href="?module=bk">
-          <i class="material-icons">libaries</i>
+          <i class="material-icons">groups</i>
           <p>BK (Counseling Guidance)</p>
         </a>
       </li>
