@@ -54,7 +54,7 @@ $aksi   = "module/".$_GET['module']."/action.php";
               <td>Bojong Gede</td>
               <td>
                 <span>
-                  <a class="btn btn-warning btn-xs"><i style="color:white;" class="fa fa-eye"></i></a>
+                  <a class="btn btn-warning btn-xs" href="<?php echo '?module='.$_GET['module'].'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
                   <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
                   <a class="btn btn-danger btn-xs"><i style="color:white;" class="fa fa-trash"></i></a>
                 </span>
