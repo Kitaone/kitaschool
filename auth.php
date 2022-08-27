@@ -18,7 +18,8 @@ include('config/koneksi.php');
 // 		setcookie("username", $_POST['username']);
 // 		setcookie("password", $_POST['password']);
 // 	}
-	header('location: media.php');
+	// header('location: media.php');
+	header('location: apps.php');
 // }else{
 // 	$_SESSION['flash']['class']='alert alert-danger';
 // 	$_SESSION['flash']['label']='Username atau password salah';
