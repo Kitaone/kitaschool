@@ -13,8 +13,11 @@
         </a>
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=master" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           <i class="material-icons">content_paste</i>
+          <span class="pull-right ">
+            <i class="fa fa-caret-down"></i>
+          </span>
           <p>Menu</p>
         </a>
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
@@ -41,8 +44,11 @@
         </div>
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=master" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="material-icons">content_paste</i>
+          <span class="pull-right ">
+            <i class="fa fa-caret-down"></i>
+          </span>
           <p>Menu</p>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
