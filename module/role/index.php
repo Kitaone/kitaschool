@@ -22,10 +22,8 @@ $aksi   = "module/".$_GET['module']."/action.php";
         <table class="table">
           <thead class=" text-primary">
             <th>#</th>
-            <th>School Token</th>
             <th>Hcode</th>
             <th>Name</th>
-            <th>Description</th>
             <th>Status</th>
             <th>Created at</th>   
             <th>Updated at</th>   
@@ -34,10 +32,8 @@ $aksi   = "module/".$_GET['module']."/action.php";
           <tbody>            
             <tr>       
               <td>1</td>
-              <td>aF5I7jy9nZmGEFY16&zhlIebtI^</td>
               <td>dashboard</td>
-              <td>Dashboard</td>
-              <td>Lorem ipsum dolor siamet</td>
+              <td>Admin</td>
               <td>1</td>
               <td>2022-08-20 10:46:58</td>
               <td>2022-08-20 10:46:58</td>

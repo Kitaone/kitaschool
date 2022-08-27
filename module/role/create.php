@@ -10,15 +10,7 @@ $edit=mysqli_fetch_array(mysqli_query($conn,"SELECT * from pasien where id='$_GE
       <p class="card-category">Pengisian yang belum disimpan akan hilang</p>
     </div>
     <div class="card-body">
-      <form action="<?php echo $aksi."?module=".$_GET['module']."&act=".$_GET['act'] ?>" method="POST">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group">
-              <label class="bmd-label-floating">School Token</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>
-        </div>
+      <form action="<?php echo $aksi."?module=".$_GET['module']."&act=".$_GET['act'] ?>" method="POST">        
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
@@ -34,15 +26,7 @@ $edit=mysqli_fetch_array(mysqli_query($conn,"SELECT * from pasien where id='$_GE
               <input type="text" class="form-control">
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="form-group">
-              <label class="bmd-label-floating">Description</label>
-              <input type="text" class="form-control">
-            </div>
-          </div>
-        </div>
+        </div>        
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
