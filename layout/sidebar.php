@@ -13,54 +13,37 @@
         </a>
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUsers" aria-expanded="true" aria-controls="collapseUsers">
           <i class="material-icons">person</i>
           <span class="pull-right ">
             <i class="fa fa-caret-down"></i>
           </span>
           <p>Users</p>
         </a>
-        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
+        <div id="collapseUsers" class="collapse" aria-labelledby="headingUsers" data-parent="#nav">
           <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="?module=x">
+            <li class="nav-item <?php if (@$_GET['module']=='siswa'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=siswa">
                 <i class="material-icons">content_paste</i>
-                <p>Sub menu 1</p>
+                <p>Siswa</p>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?module=x">
+            <li class="nav-item <?php if (@$_GET['module']=='teacher'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=teacher">
                 <i class="material-icons">content_paste</i>
-                <p>Sub menu 1</p>
+                <p>Teacher</p>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?module=x">
+            <li class="nav-item <?php if (@$_GET['module']=='parent'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=parent">
                 <i class="material-icons">content_paste</i>
-                <p>Sub menu 1</p>
+                <p>Parent</p>
               </a>
             </li>
           </ul>
         </div>
       </li>
-      <li class="nav-item <?php if (@$_GET['module']=='siswa'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=siswa">
-          <i class="material-icons">content_paste</i>
-          <p>Siswa</p>
-        </a>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='teacher'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=teacher">
-          <i class="material-icons">content_paste</i>
-          <p>Teacher</p>
-        </a>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='parent'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=parent">
-          <i class="material-icons">content_paste</i>
-          <p>Parent</p>
-        </a>
-      </li>
+
       <li class="nav-item <?php if (@$_GET['module']=='ppdb'){echo 'active';} ?>">
         <a class="nav-link" href="?module=ppdb">
           <i class="material-icons">person</i>
