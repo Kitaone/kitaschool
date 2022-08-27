@@ -20,6 +20,7 @@ include "config/koneksi.php";
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
+            <a class="navbar-brand" href="<?php echo isset($_GET['act']) ?>"><i class="fa fa-arrow-left"></i></a>
             <a class="navbar-brand" href="javascript:;">
               <?php echo @$_GET['module'] ? strtoupper($_GET['module']) : "Dashboard"; ?>
             </a>
