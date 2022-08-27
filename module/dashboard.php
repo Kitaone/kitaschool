@@ -241,6 +241,15 @@
     </div>
   </div>
 </div>
+<div class="col-lg-12">
+  <div class="card card-stats" style="padding-top: 15px;padding-bottom: 5px;">
+    <center>
+      <span id="quotes"></span><br>
+      <span id="author"></span>
+    </center>  
+  </div>
+</div>
+
 
 
 <!-- <div class="col-lg-12 col-md-12">
@@ -299,3 +308,30 @@
   </div>
 </div>
 </div> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+  
+  $(document).ready(function() {
+    $.ajax({
+        url : 'https://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=?',
+        dataType: 'jsonp',
+        success: function (data) { 
+        var quote = data.quoteText;
+        var author = data.quoteAuthor;        
+        console.log("quotesnya ==>", quote)
+        console.log("authornya ==>", author)
+        $("#quotes").html("<span style='font-weight:bold;font-size:19px'>' "+quote+" '</span>");
+          if(author == ''){            
+            $("#author").html("<i><span style='font-weight:normal;font-size:14px'>' Unknown '</span></i>");
+          } else{
+            $("#author").html("<i><span style='font-weight:normal;font-size:14px'>' "+author+" '</span></i>");          
+          }
+      },
+      error: function (data) {
+          quote = "A year spent in artificial intelligence is enough to make one believe in God.";
+          author = "Alan Perlis";
+      }
+    });
+  });
+  
+</script>
