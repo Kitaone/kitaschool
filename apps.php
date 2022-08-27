@@ -187,7 +187,7 @@
                 color: black;
             }
             .flip-card-back {
-                background-color: #2980b9;
+                /*background-color: #2980b9;*/
                 color: white;
                 transform: rotateY(180deg);
             }
@@ -239,7 +239,7 @@
                                                 <i class="fa fa-user-plus fa-3x"></i>
                                                 <h5>PPDB</h5>
                                             </div>
-                                            <div class="flip-card-back">
+                                            <div class="flip-card-back text-dark">
                                                 <p>Aplikasi PPDB</p> 
                                                 <p></p>
                                             </div>
@@ -255,7 +255,7 @@
                                                 <i class="fa fa-user-plus fa-3x text-white"></i>
                                                 <h5 class="text-white">BK</h5>
                                             </div>
-                                            <div class="flip-card-back">
+                                            <div class="flip-card-back bg-primary">
                                                 <p>Aplikasi BK</p> 
                                             </div>
                                         </div>
@@ -265,12 +265,12 @@
                             <div class="col-md-4 col-xs-12">
                                 <div class="flip-card">
                                     <a href="media.php">
-                                        <div class="flip-card-inner bg-primary">
+                                        <div class="flip-card-inner bg-info">
                                             <div class="flip-card-front">
                                                 <i class="fa fa-plus fa-3x text-white"></i>
                                                 <h5 class="text-white">Others</h5>
                                             </div>
-                                            <div class="flip-card-back">
+                                            <div class="flip-card-back bg-info">
                                                 <p>Aplikasi Lainnya</p>
                                             </div>
                                         </div>
