@@ -12,6 +12,24 @@
           <p>Dashboard</p>
         </a>
       </li>
+      <li class="nav-item <?php if (@$_GET['module']=='bk'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=bk">
+          <i class="material-icons">libaries</i>
+          <p>BK (Counseling Guidance)</p>
+        </a>
+      </li>
+      <li class="nav-item <?php if (@$_GET['module']=='ppdb'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=ppdb">
+          <i class="material-icons">books</i>
+          <p>PPDB</p>
+        </a>
+      </li>
+      <li class="nav-item <?php if (@$_GET['module']=='payment'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=payment">
+          <i class="material-icons">payment</i>
+          <p>Payment</p>
+        </a>
+      </li>
       <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUsers" aria-expanded="true" aria-controls="collapseUsers">
           <i class="material-icons">person</i>
@@ -42,25 +60,6 @@
             </li>
           </ul>
         </div>
-      </li>
-
-      <li class="nav-item <?php if (@$_GET['module']=='ppdb'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=ppdb">
-          <i class="material-icons">person</i>
-          <p>PPDB</p>
-        </a>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='payment'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=payment">
-          <i class="material-icons">health_and_safety</i>
-          <p>Payment</p>
-        </a>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='bk'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=bk">
-          <i class="material-icons">health_and_safety</i>
-          <p>BK</p>
-        </a>
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
