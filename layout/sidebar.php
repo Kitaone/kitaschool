@@ -14,11 +14,11 @@
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <i class="material-icons">content_paste</i>
+          <i class="material-icons">person</i>
           <span class="pull-right ">
             <i class="fa fa-caret-down"></i>
           </span>
-          <p>Menu</p>
+          <p>Users</p>
         </a>
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
           <ul class="nav">
@@ -42,39 +42,6 @@
             </li>
           </ul>
         </div>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
-        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-          <i class="material-icons">content_paste</i>
-          <span class="pull-right ">
-            <i class="fa fa-caret-down"></i>
-          </span>
-          <p>Menu</p>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="?module=x">
-                <i class="material-icons mt-1">remove</i>
-                <p>Sub menu 1</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?module=x">
-                <i class="material-icons mt-1">remove</i>
-                <p>Sub menu 1</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="?module=x">
-                <i class="material-icons mt-1">remove</i>
-                <p>Sub menu 1</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li>
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='siswa'){echo 'active';} ?>">
         <a class="nav-link" href="?module=siswa">
@@ -112,78 +79,163 @@
           <p>BK</p>
         </a>
       </li>
-      <li class="nav-item <?php if (@$_GET['module']=='master-data'){echo 'active';} ?>">
-        <div class="nav-link">
+      <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="material-icons">dashboard</i>
+          <span class="pull-right ">
+            <i class="fa fa-caret-down"></i>
+          </span>
           <p>Master Data</p>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
+          <ul class="nav">
+            <li class="nav-item <?php if (@$_GET['module']=='list-school'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=list-school">
+                <i class="material-icons">content_paste</i>
+                <p>List Schools</p>
+              </a>
+            </li>
+            <li class="nav-item <?php if (@$_GET['module']=='list-school-level'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=list-school-level">
+                <i class="material-icons">content_paste</i>
+                <p>List School Levels</p>
+              </a>
+            </li>
+            <li class="nav-item <?php if (@$_GET['module']=='class'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=class">
+                <i class="material-icons">content_paste</i>
+                <p>List classes</p>
+              </a>
+            </li>
+            <li class="nav-item <?php if (@$_GET['module']=='course'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=course">
+                <i class="material-icons">content_paste</i>
+                <p>List Courses</p>
+              </a>
+            </li>
+            <li class="nav-item <?php if (@$_GET['module']=='list-employee'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=list-employee">
+                <i class="material-icons">content_paste</i>
+                <p>List Employees</p>
+              </a>
+            </li>
+            <li class="nav-item <?php if (@$_GET['module']=='list-teachers'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=list-teachers">
+                <i class="material-icons">content_paste</i>
+                <p>List Teachers</p>
+              </a>
+            </li>
+            <li class="nav-item <?php if (@$_GET['module']=='list-students'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=list-students">
+                <i class="material-icons">content_paste</i>
+                <p>List Students</p>
+              </a>
+            </li>
+          </ul>
         </div>
       </li>
-      <li class="nav-item <?php if (@$_GET['module']=='list-school'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=list-school">
-          <i class="material-icons">content_paste</i>
-          <p>List Schools</p>
+      <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseSettings" aria-expanded="true" aria-controls="collapseSettings">
+          <i class="material-icons">settings</i>
+          <span class="pull-right ">
+            <i class="fa fa-caret-down"></i>
+          </span>
+          <p>Settings</p>
         </a>
+        <div id="collapseSettings" class="collapse" aria-labelledby="headingSettings" data-parent="#nav">
+          <ul class="nav">
+            <li class="nav-item <?php if (@$_GET['module']=='apps'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=apps">
+                <i class="material-icons">health_and_safety</i>
+                <p>Apps</p>
+              </a>
+            </li>
+            <li class="nav-item <?php if (@$_GET['module']=='role'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=role">
+                <i class="material-icons">health_and_safety</i>
+                <p>Role</p>
+              </a>
+            </li>
+            <li class="nav-item <?php if (@$_GET['module']=='backup-databases'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=backup-databases">
+                <i class="material-icons">health_and_safety</i>
+                <p>Backups Databases</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </li>
-      <li class="nav-item <?php if (@$_GET['module']=='list-school-level'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=list-school-level">
+      <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           <i class="material-icons">content_paste</i>
-          <p>List School Levels</p>
+          <span class="pull-right ">
+            <i class="fa fa-caret-down"></i>
+          </span>
+          <p>Menu</p>
         </a>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons">content_paste</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons">content_paste</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons">content_paste</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </li>
-      <li class="nav-item <?php if (@$_GET['module']=='class'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=class">
-          <i class="material-icons">content_paste</i>
-          <p>List classes</p>
-        </a>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='course'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=course">
-          <i class="material-icons">content_paste</i>
-          <p>List Courses</p>
-        </a>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='list-employee'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=list-employee">
-          <i class="material-icons">content_paste</i>
-          <p>List Employees</p>
-        </a>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='list-teachers'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=list-teachers">
-          <i class="material-icons">content_paste</i>
-          <p>List Teachers</p>
-        </a>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='list-students'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=list-students">
-          <i class="material-icons">content_paste</i>
-          <p>List Students</p>
-        </a>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='settings'){echo 'active';} ?>">
+      <!-- asset single menu -->
+      <!-- <li class="nav-item <?php if (@$_GET['module']=='settings'){echo 'active';} ?>">
         <div class="nav-link">
           <i class="material-icons">dashboard</i>
           <p>Settings</p>
         </div>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='apps'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=apps">
-          <i class="material-icons">health_and_safety</i>
-          <p>Apps</p>
+      </li> -->
+
+      <!-- asset dropdown -->
+      <!-- <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <i class="material-icons">content_paste</i>
+          <span class="pull-right ">
+            <i class="fa fa-caret-down"></i>
+          </span>
+          <p>Menu</p>
         </a>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='role'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=role">
-          <i class="material-icons">health_and_safety</i>
-          <p>Role</p>
-        </a>
-      </li>
-      <li class="nav-item <?php if (@$_GET['module']=='backup-databases'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=backup-databases">
-          <i class="material-icons">health_and_safety</i>
-          <p>Backups Databases</p>
-        </a>
-      </li>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons">content_paste</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons">content_paste</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons">content_paste</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li> -->
     </ul>
   </div>
 </div>
