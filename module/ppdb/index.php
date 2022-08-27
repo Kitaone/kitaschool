@@ -30,20 +30,36 @@ $aksi   = "module/".$_GET['module']."/action.php";
             <th>Aksi</th>
           </thead>
           <tbody>            
-              <tr>                
-                <td>1</td>
-                <td>12345</td>
-                <td>123456</td>
-                <td>Jupri</td>
-                <td>Laki-laki</td>
-                <td>Cipinang</td>
-                <td>
-                  <span>
-                    <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
-                    <a class="btn btn-danger btn-xs"><i style="color:white;" class="fa fa-trash"></i></a>
-                  </span>
-                </td>
-              </tr>              
+            <tr>                
+              <td>1</td>
+              <td>12345</td>
+              <td>123456</td>
+              <td>Jupri</td>
+              <td>Laki-laki</td>
+              <td>Cipinang</td>
+              <td>
+                <span>
+                  <a class="btn btn-warning btn-xs" href="<?php echo '?module='.$_GET['module'].'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
+                  <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
+                  <a class="btn btn-danger btn-xs"><i style="color:white;" class="fa fa-trash"></i></a>
+                </span>
+              </td>
+            </tr>              
+            <tr>                
+              <td>2</td>
+              <td>12346</td>
+              <td>123457</td>
+              <td>Jamal</td>
+              <td>Laki-laki</td>
+              <td>Bojong Gede</td>
+              <td>
+                <span>
+                  <a class="btn btn-warning btn-xs" href="<?php echo '?module='.$_GET['module'].'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
+                  <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
+                  <a class="btn btn-danger btn-xs"><i style="color:white;" class="fa fa-trash"></i></a>
+                </span>
+              </td>
+            </tr> 
           </tbody>
         </table>
       </div>
