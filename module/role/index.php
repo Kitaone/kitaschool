@@ -32,6 +32,7 @@ $aksi   = "module/" . $_GET['module'] . "/action.php";
                 <option value="#">Please select user</option>
                 <option value="1">Jamal</option>
                 <option value="2">Rendi</option>
+                <option value="2">Adul</option>
               </select>
             </div>
           </div>
