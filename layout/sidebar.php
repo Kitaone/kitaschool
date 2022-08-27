@@ -5,12 +5,70 @@
     </a>
   </div>
   <div class="sidebar-wrapper">
-    <ul class="nav">
+    <ul class="nav" id="nav">
       <li class="nav-item <?php if (!@$_GET['module']){echo 'active';} ?>">
         <a class="nav-link" href="?">
           <i class="material-icons">dashboard</i>
           <p>Dashboard</p>
         </a>
+      </li>
+      <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=master" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <i class="material-icons">content_paste</i>
+          <p>Menu</p>
+        </a>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons">content_paste</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons">content_paste</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons">content_paste</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
+        <a class="nav-link" href="?module=master" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="material-icons">content_paste</i>
+          <p>Menu</p>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons mt-1">remove</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons mt-1">remove</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?module=x">
+                <i class="material-icons mt-1">remove</i>
+                <p>Sub menu 1</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='siswa'){echo 'active';} ?>">
         <a class="nav-link" href="?module=siswa">
@@ -52,7 +110,7 @@
         <div class="nav-link">
           <i class="material-icons">dashboard</i>
           <p>Master Data</p>
-      </div>
+        </div>
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='list-school'){echo 'active';} ?>">
         <a class="nav-link" href="?module=list-school">
@@ -100,7 +158,7 @@
         <div class="nav-link">
           <i class="material-icons">dashboard</i>
           <p>Settings</p>
-      </div>
+        </div>
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='apps'){echo 'active';} ?>">
         <a class="nav-link" href="?module=apps">
