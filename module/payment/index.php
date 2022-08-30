@@ -21,25 +21,25 @@ $aksi   = "module/".$_GET['module']."/action.php";
       <div class="table-responsive">
         <table class="table">
           <thead class=" text-primary">
-            <th>#</th>
-            <th>Tanggal</th>
-            <th>Jam</th>
-            <th>Atas Nama</th>
-            <th>Type</th>
-            <th>Metode</th>
-            <th>Nominal</th>        
-            <th>Aksi</th>
+            <th class="text-center">#</th>
+            <th class="text-center">Tanggal</th>
+            <th class="text-center">Jam</th>
+            <th class="text-center">Atas Nama</th>
+            <th class="text-center">Type</th>
+            <th class="text-center">Metode</th>
+            <th class="text-center">Nominal</th>        
+            <th class="text-center">Aksi</th>
           </thead>
           <tbody>            
             <tr>                
-              <td>1</td>
-              <td><?php echo dateIndonesian(date('Y-m-d')) ?></td>
-              <td><?php echo date('H:i') ?></td>
-              <td>Jupri</td>
-              <td><?php echo ucwords($_GET['type']) ?></td>
-              <td>Cash</td>
-              <td>Rp. <?php echo number_format(rand(100,500).'000') ?></td>
-              <td>
+              <td class="text-center">1</td>
+              <td class="text-center"><?php echo dateIndonesian(date('Y-m-d')) ?></td>
+              <td class="text-center"><?php echo date('H:i') ?></td>
+              <td class="text-center">Jupri</td>
+              <td class="text-center"><?php echo ucwords($_GET['type']) ?></td>
+              <td class="text-center">Cash</td>
+              <td class="text-center">Rp. <?php echo number_format(rand(100,500).'000') ?></td>
+              <td class="text-center">
                 <span>
                   <a class="btn btn-warning btn-xs" href="<?php echo '?module='.$_GET['module'].'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
                   <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
@@ -48,14 +48,14 @@ $aksi   = "module/".$_GET['module']."/action.php";
               </td>
             </tr>              
             <tr>                
-              <td>2</td>
-              <td><?php echo dateIndonesian(date('Y-m-d')) ?></td>
-              <td><?php echo date('H:05') ?></td>
-              <td>Jamal</td>
-              <td><?php echo ucwords($_GET['type']) ?></td>
-              <td>Transfer BRI</td>
-              <td>Rp. <?php echo number_format(rand(100,500).'000') ?></td>
-              <td>
+              <td class="text-center">2</td>
+              <td class="text-center"><?php echo dateIndonesian(date('Y-m-d')) ?></td>
+              <td class="text-center"><?php echo date('H:05') ?></td>
+              <td class="text-center">Jamal</td>
+              <td class="text-center"><?php echo ucwords($_GET['type']) ?></td>
+              <td class="text-center">Transfer BRI</td>
+              <td class="text-center">Rp. <?php echo number_format(rand(100,500).'000') ?></td>
+              <td class="text-center">
                 <span>
                   <a class="btn btn-warning btn-xs" href="<?php echo '?module='.$_GET['module'].'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
                   <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
