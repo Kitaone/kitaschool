@@ -149,6 +149,18 @@ $aksi   = "module/" . $_GET['module'] . "/action.php";
                 </span>
               </td>
             </tr>
+            <tr>
+              <td style="text-align: center;">6</td>
+              <td style="text-align: center;">Master Data</td>
+              <td style="text-align: center;">6</td>
+              <td style="text-align: center;">Main Menu</td>
+              <td style="text-align: center;">
+                <span>
+                  <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
+                  <a class="btn btn-danger btn-xs"><i style="color:white;" class="fa fa-trash"></i></a>
+                </span>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
