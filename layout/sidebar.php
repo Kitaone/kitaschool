@@ -25,10 +25,41 @@
         </a>
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='payment'){echo 'active';} ?>">
-        <a class="nav-link" href="?module=payment">
+        <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePayment" aria-expanded="true" aria-controls="collapsePayment">
           <i class="material-icons">payment</i>
+          <span class="pull-right ">
+            <i class="fa fa-caret-down"></i>
+          </span>
           <p>Payment</p>
         </a>
+        <div id="collapsePayment" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="?module=payment&type=pengeluaran">
+                <i class="material-icons">remove</i>
+                <p>Transaksi Pengeluaran</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?module=payment&type=spp">
+                <i class="material-icons">remove</i>
+                <p>SPP</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?module=payment&type=gedung">
+                <i class="material-icons">remove</i>
+                <p>Gedung</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="?module=payment&type=pendaftaran">
+                <i class="material-icons">remove</i>
+                <p>Pendaftaran</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </li>
       <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseUsers" aria-expanded="true" aria-controls="collapseUsers">
@@ -40,10 +71,10 @@
         </a>
         <div id="collapseUsers" class="collapse" aria-labelledby="headingUsers" data-parent="#nav">
           <ul class="nav">
-            <li class="nav-item <?php if (@$_GET['module']=='siswa'){echo 'active';} ?>">
-              <a class="nav-link" href="?module=siswa">
+            <li class="nav-item <?php if (@$_GET['module']=='student'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=student">
                 <i class="material-icons">content_paste</i>
-                <p>Siswa</p>
+                <p>Student</p>
               </a>
             </li>
             <li class="nav-item <?php if (@$_GET['module']=='teacher'){echo 'active';} ?>">
@@ -185,7 +216,6 @@
           <p>Settings</p>
         </div>
       </li> -->
-
       <!-- asset dropdown -->
       <!-- <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
