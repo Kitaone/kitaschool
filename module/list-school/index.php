@@ -5,8 +5,8 @@ $aksi   = "module/".$_GET['module']."/action.php";
   <div class="card">
     <div class="card-header card-header-primary">
       <span class="float-right"><a class="btn btn-secondary" href="?module=<?php echo $_GET['module'] ?>&act=create"><i class="fa fa-plus"></i></a></span>
-      <h4 class="card-title "><?php echo strtoupper($_GET['module']) ?></h4>
-      <p class="card-category"> Tabel dengan data <?php echo strtoupper($_GET['module']) ?></p>
+      <h4 class="card-title "><?php echo str_replace('-', ' ', strtoupper($_GET['module'])); ?></h4>
+      <p class="card-category"> Tabel dengan data <?php echo str_replace('-', ' ', strtoupper($_GET['module'])); ?></p>
     </div>
     <div class="card-body">
       <div class="p-2">
@@ -22,19 +22,19 @@ $aksi   = "module/".$_GET['module']."/action.php";
         <table class="table">
           <thead class=" text-primary">
             <th class="text-center">#</th>
-            <th class="text-center">NIP</th>
-            <th class="text-center">Name</th>
-            <th class="text-center">Gender</th>
-            <th class="text-center">Address</th>        
+            <th class="text-center">Name School</th>
+            <th class="text-center">Provinces</th>
+            <th class="text-center">Regions</th>
+            <th class="text-center">Locations</th>      
             <th class="text-center">Aksi</th>
           </thead>
           <tbody>            
             <tr>                
               <td class="text-center">1</td>
-              <td class="text-center">123456</td>
-              <td class="text-center">Sinta Yulia</td>
-              <td class="text-center">Perempuan</td>
-              <td class="text-center">Cikarang</td>
+              <td class="text-center">SMA ISLAM AL-Azhar</td>
+              <td class="text-center">Jakarta Timur</td>
+              <td class="text-center">Ciracas</td>
+              <td class="text-center">Jl. Raya Centex No.24, RT.7/RW.10,<br> Ciracas, Kec. Ciracas, Kota Jakarta Timur,<br> Daerah Khusus Ibukota Jakarta 13740</td>
               <td class="text-center">
                 <span>
                   <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
@@ -42,19 +42,7 @@ $aksi   = "module/".$_GET['module']."/action.php";
                 </span>
               </td>
             </tr>              
-            <tr>                
-              <td class="text-center">2</td>
-              <td class="text-center">123457</td>
-              <td class="text-center">Kevin</td>
-              <td class="text-center">Laki-laki</td>
-              <td class="text-center">Bojong Gede</td>
-              <td class="text-center">
-                <span>
-                  <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
-                  <a class="btn btn-danger btn-xs"><i style="color:white;" class="fa fa-trash"></i></a>
-                </span>
-              </td>
-            </tr> 
+             
           </tbody>
         </table>
       </div>
