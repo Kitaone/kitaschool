@@ -22,42 +22,42 @@ $aksi   = "module/".$_GET['module']."/action.php";
         <table class="table">
           <thead class=" text-primary">
             <th>#</th>
-            <th>Tanggal</th>
-            <th>Jam</th>
-            <th>Atas Nama</th>
-            <th>Type</th>
-            <th>Metode</th>
-            <th>Nominal</th>        
+            <th>Nama Orang Tua</th>
+            <th>NISN Anak</th>
+            <th>NIS Anak</th>
+            <th>Nama Anak</th>
+            <th>Gender Anak</th>
+            <th>Alamat Anak</th>        
             <th>Aksi</th>
           </thead>
           <tbody>            
             <tr>                
               <td>1</td>
-              <td><?php echo dateIndonesian(date('Y-m-d')) ?></td>
-              <td><?php echo date('H:i') ?></td>
+              <td>Taryana Jupri</td>
+              <td>12345</td>
+              <td>123456</td>
               <td>Jupri</td>
-              <td><?php echo ucwords($_GET['type']) ?></td>
-              <td>Cash</td>
-              <td>Rp. <?php echo number_format(rand(100,500).'000') ?></td>
+              <td>Laki-laki</td>
+              <td>Cipinang</td>
               <td>
                 <span>
-                  <a class="btn btn-warning btn-xs" href="<?php echo '?module='.$_GET['module'].'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
+                  <a class="btn btn-warning btn-xs" href="<?php echo '?module='.'student'.'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
                   <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
                   <a class="btn btn-danger btn-xs"><i style="color:white;" class="fa fa-trash"></i></a>
                 </span>
               </td>
             </tr>              
-            <tr>                
+            <tr>
               <td>2</td>
-              <td><?php echo dateIndonesian(date('Y-m-d')) ?></td>
-              <td><?php echo date('H:05') ?></td>
+              <td>Keman Sueman</td>
+              <td>12346</td>
+              <td>123457</td>
               <td>Jamal</td>
-              <td><?php echo ucwords($_GET['type']) ?></td>
-              <td>Transfer BRI</td>
-              <td>Rp. <?php echo number_format(rand(100,500).'000') ?></td>
+              <td>Laki-laki</td>
+              <td>Bojong Gede</td>
               <td>
                 <span>
-                  <a class="btn btn-warning btn-xs" href="<?php echo '?module='.$_GET['module'].'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
+                  <a class="btn btn-warning btn-xs" href="<?php echo '?module='.'student'.'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
                   <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
                   <a class="btn btn-danger btn-xs"><i style="color:white;" class="fa fa-trash"></i></a>
                 </span>

@@ -1,6 +1,22 @@
 <?php
 $aksi   = "module/" . $_GET['module'] . "/action.php";
 ?>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+<style type="text/css">
+  .select2-container--default .select2-selection--single {
+    /*border: 2px solid #fe901d;*/
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+  .select2 {
+    padding: 0;
+    width: 100%;
+  }
+</style>
 <div class="col-md-6">
   <div class="card">
     <div class="card-header card-header-primary">
@@ -28,7 +44,7 @@ $aksi   = "module/" . $_GET['module'] . "/action.php";
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
-              <select name="user_id" class="form-control">
+              <select name="user_id" class="select2 form-control">
                 <option value="#">Please select user</option>
                 <option value="1">Jamal</option>
                 <option value="2">Rendi</option>
@@ -40,14 +56,74 @@ $aksi   = "module/" . $_GET['module'] . "/action.php";
         <div class="row">
           <div class="col-md-12">
             <div class="form-group">
-              <select name="user_id" class="form-control" multiple="multiple" style="height: 127px;">
-                <option value="" selected>Please select permission</option>
-                <option value="1">Manage</option>
-                <option value="2">Views</option>
-                <option value="3">Create</option>
-                <option value="4">Edit</option>
-                <option value="5">Delete</option>
-              </select>
+              <label>Action</label>
+              <table>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="" checked>
+                        <span class="form-check-sign">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>Manage</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <span class="form-check-sign">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>Views</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <span class="form-check-sign">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>Edit</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <span class="form-check-sign">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>Delete</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <span class="form-check-sign">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>Manage</td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
@@ -73,7 +149,6 @@ $aksi   = "module/" . $_GET['module'] . "/action.php";
           </div>
         <?php endif ?>
       </div>
-
       <div class="table-responsive">
         <table class="table table-sm">
           <thead class="text-primary">
@@ -144,3 +219,10 @@ $aksi   = "module/" . $_GET['module'] . "/action.php";
     </div>
   </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" defer></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.select2').select2();
+  });
+</script>
