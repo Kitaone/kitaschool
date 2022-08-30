@@ -21,25 +21,25 @@ $aksi   = "module/".$_GET['module']."/action.php";
       <div class="table-responsive">
         <table class="table">
           <thead class=" text-primary">
-            <th>#</th>
-            <th>Nama Orang Tua</th>
-            <th>NISN Anak</th>
-            <th>NIS Anak</th>
-            <th>Nama Anak</th>
-            <th>Gender Anak</th>
-            <th>Alamat Anak</th>        
-            <th>Aksi</th>
+            <th class="text-center">#</th>
+            <th class="text-center">Nama Orang Tua</th>
+            <th class="text-center">NISN Anak</th>
+            <th class="text-center">NIS Anak</th>
+            <th class="text-center">Nama Anak</th>
+            <th class="text-center">Gender Anak</th>
+            <th class="text-center">Alamat Anak</th>        
+            <th class="text-center">Aksi</th>
           </thead>
           <tbody>            
             <tr>                
-              <td>1</td>
-              <td>Taryana Jupri</td>
-              <td>12345</td>
-              <td>123456</td>
-              <td>Jupri</td>
-              <td>Laki-laki</td>
-              <td>Cipinang</td>
-              <td>
+              <td class="text-center">1</td>
+              <td class="text-center">Taryana Jupri</td>
+              <td class="text-center">12345</td>
+              <td class="text-center">123456</td>
+              <td class="text-center">Jupri</td>
+              <td class="text-center">Laki-laki</td>
+              <td class="text-center">Cipinang</td>
+              <td class="text-center">
                 <span>
                   <a class="btn btn-warning btn-xs" href="<?php echo '?module='.'student'.'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
                   <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
@@ -48,14 +48,14 @@ $aksi   = "module/".$_GET['module']."/action.php";
               </td>
             </tr>              
             <tr>
-              <td>2</td>
-              <td>Keman Sueman</td>
-              <td>12346</td>
-              <td>123457</td>
-              <td>Jamal</td>
-              <td>Laki-laki</td>
-              <td>Bojong Gede</td>
-              <td>
+              <td class="text-center">2</td>
+              <td class="text-center">Keman Sueman</td>
+              <td class="text-center">12346</td>
+              <td class="text-center">123457</td>
+              <td class="text-center">Jamal</td>
+              <td class="text-center">Laki-laki</td>
+              <td class="text-center">Bojong Gede</td>
+              <td class="text-center">
                 <span>
                   <a class="btn btn-warning btn-xs" href="<?php echo '?module='.'student'.'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
                   <a class="btn btn-primary btn-xs"><i style="color:white;" class="fa fa-edit"></i></a>
