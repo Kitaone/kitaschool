@@ -178,7 +178,7 @@
           </ul>
         </div>
       </li>
-      <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
+      <!-- <li class="nav-item <?php if (@$_GET['module']=='master'){echo 'active';} ?>">
         <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           <i class="material-icons">content_paste</i>
           <span class="pull-right ">
@@ -208,7 +208,7 @@
             </li>
           </ul>
         </div>
-      </li>
+      </li> -->
       <!-- asset single menu -->
       <!-- <li class="nav-item <?php if (@$_GET['module']=='settings'){echo 'active';} ?>">
         <div class="nav-link">
