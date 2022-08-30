@@ -40,10 +40,10 @@
         </a>
         <div id="collapseUsers" class="collapse" aria-labelledby="headingUsers" data-parent="#nav">
           <ul class="nav">
-            <li class="nav-item <?php if (@$_GET['module']=='siswa'){echo 'active';} ?>">
-              <a class="nav-link" href="?module=siswa">
+            <li class="nav-item <?php if (@$_GET['module']=='student'){echo 'active';} ?>">
+              <a class="nav-link" href="?module=student">
                 <i class="material-icons">content_paste</i>
-                <p>Siswa</p>
+                <p>Student</p>
               </a>
             </li>
             <li class="nav-item <?php if (@$_GET['module']=='teacher'){echo 'active';} ?>">
