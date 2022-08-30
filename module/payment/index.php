@@ -22,21 +22,23 @@ $aksi   = "module/".$_GET['module']."/action.php";
         <table class="table">
           <thead class=" text-primary">
             <th>#</th>
-            <th>NISN</th>
-            <th>NIS</th>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Address</th>        
+            <th>Tanggal</th>
+            <th>Jam</th>
+            <th>Atas Nama</th>
+            <th>Type</th>
+            <th>Metode</th>
+            <th>Nominal</th>        
             <th>Aksi</th>
           </thead>
           <tbody>            
             <tr>                
               <td>1</td>
-              <td>12345</td>
-              <td>123456</td>
+              <td><?php echo dateIndonesian(date('Y-m-d')) ?></td>
+              <td><?php echo date('H:i') ?></td>
               <td>Jupri</td>
-              <td>Laki-laki</td>
-              <td>Cipinang</td>
+              <td><?php echo ucwords($_GET['type']) ?></td>
+              <td>Cash</td>
+              <td>Rp. <?php echo number_format(rand(100,500).'000') ?></td>
               <td>
                 <span>
                   <a class="btn btn-warning btn-xs" href="<?php echo '?module='.$_GET['module'].'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>
@@ -47,11 +49,12 @@ $aksi   = "module/".$_GET['module']."/action.php";
             </tr>              
             <tr>                
               <td>2</td>
-              <td>12346</td>
-              <td>123457</td>
+              <td><?php echo dateIndonesian(date('Y-m-d')) ?></td>
+              <td><?php echo date('H:05') ?></td>
               <td>Jamal</td>
-              <td>Laki-laki</td>
-              <td>Bojong Gede</td>
+              <td><?php echo ucwords($_GET['type']) ?></td>
+              <td>Transfer BRI</td>
+              <td>Rp. <?php echo number_format(rand(100,500).'000') ?></td>
               <td>
                 <span>
                   <a class="btn btn-warning btn-xs" href="<?php echo '?module='.$_GET['module'].'&act=detail&id=1' ?>"><i style="color:white;" class="fa fa-eye"></i></a>

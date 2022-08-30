@@ -35,25 +35,25 @@
         <div id="collapsePayment" class="collapse" aria-labelledby="headingOne" data-parent="#nav">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="?module=payment">
+              <a class="nav-link" href="?module=payment&type=pengeluaran">
                 <i class="material-icons">remove</i>
                 <p>Transaksi Pengeluaran</p>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?module=payment">
+              <a class="nav-link" href="?module=payment&type=spp">
                 <i class="material-icons">remove</i>
                 <p>SPP</p>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?module=payment">
+              <a class="nav-link" href="?module=payment&type=gedung">
                 <i class="material-icons">remove</i>
                 <p>Gedung</p>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="?module=payment">
+              <a class="nav-link" href="?module=payment&type=pendaftaran">
                 <i class="material-icons">remove</i>
                 <p>Pendaftaran</p>
               </a>
