@@ -5,6 +5,8 @@ $edit=mysqli_fetch_array(mysqli_query($conn,"SELECT * from kunjungan where id='$
 <div class="col-md-12">
   <div class="card">
     <div class="card-header card-header-primary">
+
+      
       <h4 class="card-title"><?php echo strtoupper($_GET['act']) ?> <?php echo ucwords($_GET['module']) ?></h4>
       <p class="card-category">Pengisian yang belum disimpan akan hilang</p>
     </div>
@@ -12,12 +14,14 @@ $edit=mysqli_fetch_array(mysqli_query($conn,"SELECT * from kunjungan where id='$
       <form action="<?php echo $aksi."?module=".$_GET['module']."&act=".$_GET['act'] ?>" method="POST">
         <input type="hidden" name="id" value="<?php echo $edit['id'] ?>">
         <div class="row">
+
           <div class="col-md-12">
             <div class="form-group">
               <label class="bmd-label-floating">Tanggal Kunjungan</label>
               <input type="date" class="form-control" max="<?php echo date('Y-m-d'); ?>" name="tanggal" value="<?php echo $edit['tanggal'] ?>">
             </div>
           </div>
+
           <div class="col-md-6 col-sm-12">
             <div class="form-group">
               <label class="bmd-label-floating">Pasien</label>
@@ -40,12 +44,15 @@ $edit=mysqli_fetch_array(mysqli_query($conn,"SELECT * from kunjungan where id='$
               </select>
             </div>
           </div>
+
           <div class="col-md-12">
             <div class="form-group">
               <label class="bmd-label-floating">Diagnosa</label>
               <input type="text" class="form-control" name="diagnosa" value="<?php echo $edit['diagnosa'] ?>">
             </div>
           </div>
+
+
         </div>
         <div class="row">
           <div class="col-md-12">
