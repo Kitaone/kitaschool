@@ -9,18 +9,16 @@
         <i class="material-icons">person</i>
       </div>
       <p class="card-category">BK</p>
-      <h3 class="card-title"><?php echo mysqli_num_rows(mysqli_query($conn,"SELECT * from kunjungan")); ?>
-    </h3>
-  </div>
-  <div class="card-footer">
-    <div class="stats">
-      <i class="material-icons text-danger">info</i>
-      
-      Kunjungan Hari ini 
+      <h3 class="card-title">
+        
+      </h3>
     </div>
-    <span class="pull-right"><?php echo mysqli_num_rows(mysqli_query($conn,"SELECT * from kunjungan where tanggal = '".date('Y-m-d')."'")); ?></span>
+    <div class="card-footer">
+      <div class="stats">
+        <i class="material-icons text-danger">info</i>
+      </div>
+    </div>
   </div>
-</div>
 </div>
 <div class="col-lg-3">
   <div class="card card-stats">
@@ -35,9 +33,7 @@
       <div class="stats">
         <i class="material-icons text-success">info</i>
         
-        Kunjungan Pasien Hari ini 
       </div>
-      <span class="pull-right"><?php echo mysqli_num_rows(mysqli_query($conn,"SELECT distinct pasien from kunjungan where tanggal = '".date('Y-m-d')."'")); ?></span>
     </div>
   </div>
 </div>
@@ -54,9 +50,7 @@
       <div class="stats">
         <i class="material-icons text-danger">info</i>
         
-        Dokter Aktif Hari ini 
       </div>
-      <span class="pull-right"><?php echo mysqli_num_rows(mysqli_query($conn,"SELECT distinct dokter from kunjungan where tanggal = '".date('Y-m-d')."'")); ?></span>
     </div>
   </div>
 </div>
@@ -73,9 +67,7 @@
       <div class="stats">
         <i class="material-icons text-info">info</i>
         
-        Obat Dikeluarkan Hari ini 
       </div>
-      <span class="pull-right"><?php echo mysqli_num_rows(mysqli_query($conn,"SELECT distinct id_obat from resep where reg_date like '".date('Y-m-d')."%'")); ?></span>
     </div>
   </div>
 </div>
