@@ -1,9 +1,9 @@
 <?php 
 include "config/koneksi.php";
-// if (isset($_GET['logout']) || !isset($_SESSION['id_user'])) {
-//   session_destroy();
-//   header('location:index.php');
-// }
+if (isset($_GET['logout'])/* || !isset($_SESSION['id_user'])*/) {
+  session_destroy();
+  header('location:index.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
